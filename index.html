@@ -17,6 +17,24 @@
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
+          <div class="form-group">
+            <label for="mylength">Length</label>
+            <input type="text" class="form-control" id="mylength" placeholder="betweent8-128">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="lowerCase">
+            <label class="form-check-label" for="lowerCase">Lower Case</label>
+            <input type="checkbox" class="form-check-input" id="upperCase">
+            <label class="form-check-label" for="upperCase">Upper Case</label>
+            
+            <input type="checkbox" class="form-check-input" id="numberCase">
+            <label class="form-check-label" for="numberCase">Numbers</label>
+            
+            <input type="checkbox" class="form-check-input" id="specialCase">
+            <label class="form-check-label" for="specialCase">Special Characters</label>
+          
+          
+          </div>
           <textarea
             readonly
             id="password"
@@ -26,6 +44,7 @@
         </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
+          <button id="cpyButton" type="button" class="btn btn-primary">Copy</button>
         </div>
       </div>
     </div>
